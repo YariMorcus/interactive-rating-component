@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="">
+  <meta name="author" content="Yari Morcus">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -16,34 +18,60 @@
 </head>
 <body>
 
-  <!-- Rating state start -->
+  <main>
+    
+    <!-- Rating state start -->
+    <article>
 
-  How did we do?
+      <section>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <header>
+          <div></div> <!-- star icon comes here -->
+          <h2>How did we do?</h2>
+        </header>
 
-  1 2 3 4 5
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
 
-  Submit
+        <div> <!-- rating container -->
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+        </div>
 
-  <!-- Rating state end -->
+        <div> <!-- submit container -->
+          <button>Submit</button>
+        </div>
+        
+      </section>
 
-  <!-- Thank you state start -->
+    </article> <!-- Rating state end -->
 
-  You selected <!-- Add rating here --> out of 5
+    <article> <!-- Thank you state start -->
 
-  Thank you!
+      <section>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+        <header>
+          <div></div> <!-- icon container -->
+          <p>You selected <!-- Add rating here --> out of 5</p>
+          <h2>Thank you!</h2>
+        </header>
 
-  <!-- Thank you state end -->
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
 
+      </section>
+
+    </article> <!-- Thank you state end -->
+
+  </main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Yari Morcus    </a>.
-  </div>
+    Coded by <a href="#">Yari Morcus</a>.
+  </footer> <!-- .attribution -->
+
 </body>
 </html>

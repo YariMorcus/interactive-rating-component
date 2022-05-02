@@ -1,4 +1,5 @@
 starter-files/*
+scss/*
 .sass-cache/
 *.css.map
 *.sass.map

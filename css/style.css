@@ -1,0 +1,43 @@
+/*------------------------------------------------------------------
+[Main Stylesheet]
+
+Project:    Interactive rating component
+Version:    1.0
+Last change:    05/02/08 [fixed Float bug, vf]
+Assigned to:    Yari Morcus
+Primary use:    Portfolio project 
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents] https://www.smashingmagazine.com/2008/05/improving-code-readability-with-css-styleguides/
+
+    1. [VARIABLES] Colors
+    2. ([VARIABLES] + ) Typography
+    3. Header
+    4. Navigation
+    5. Content
+    6. Footer
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+1. [VARIABLES] Colors
+*/
+/*------------------------------------------------------------------
+2. ([VARIABLES] + ) Typography
+*/
+@font-face {
+  font-family: "overpass";
+  src: url("../font/overpass-regular.woff2") format("woff2"), url("../font/overpass-regular.woff") format("woff"), url("../font/overpass-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "overpass";
+  src: url("../font/overpass-bold.woff2") format("woff2"), url("../font/overpass-bold.woff") format("woff"), url("../font/overpass-bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.thank-you-card {
+  display: none;
+}

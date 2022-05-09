@@ -12,13 +12,14 @@ Primary use:    Portfolio project
 
     1. [VARIABLES] Colors
     2. ([VARIABLES] + ) Typography
-    3. Global
-    4. Header
-        4.1 Headings
-    5. Navigation
-    6. Cards
-    7. Content
-    8. Footer
+    3. Media query functions
+    4. Global
+    5. Header
+        5.1 Headings
+    6. Navigation
+    7. Cards
+    8. Content
+    9. Footer
 
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -42,7 +43,10 @@ Primary use:    Portfolio project
   font-display: swap;
 }
 /*------------------------------------------------------------------
-3. Global
+ 3. Media query functions
+*/
+/*------------------------------------------------------------------
+4. Global
 */
 body {
   margin: 0;
@@ -71,22 +75,39 @@ p,
 }
 
 /*------------------------------------------------------------------
-4. Header
-    4.1 Headings
+5. Header
+    5.1 Headings
 */
 h2 {
   font-family: "overpass-bold", sans-serif;
 }
 
 /*------------------------------------------------------------------
-6. Cards
+7. Cards
 */
+.star-icon-container {
+  width: 17px;
+  height: 16px;
+  padding: 1rem;
+  border: 1px solid red;
+  background-image: url("../images/icon-star.jpg");
+  background-image: url("../images/icon-star.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1.3rem;
+}
+
 .rating-card {
   margin: 0 auto;
   padding: 2rem 1.5rem;
   max-width: 300px;
   border: 1px solid red;
   border-radius: 1rem;
+}
+@media (min-width: 568px) {
+  .rating-card {
+    max-width: 330px;
+  }
 }
 
 .rating-container {
@@ -95,13 +116,20 @@ h2 {
 }
 
 .rating-circle {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.7rem;
+  height: 2.7rem;
   display: inline-block;
   border-radius: 100%;
-  line-height: 2.5rem;
+  line-height: 2.7rem;
   text-align: center;
   background: lightgreen;
+}
+@media (min-width: 568px) {
+  .rating-circle {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+  }
 }
 
 .submit-container {
@@ -111,7 +139,13 @@ h2 {
 .submit-button {
   width: 100%;
   padding: 1rem 0;
+  border-radius: 2rem;
   text-transform: uppercase;
+}
+@media (min-width: 568px) {
+  .submit-button {
+    padding: 0.7rem 0;
+  }
 }
 
 .thank-you-card {
@@ -119,7 +153,7 @@ h2 {
 }
 
 /*------------------------------------------------------------------
- 8. Footer
+ 9. Footer
 */
 .attribution {
   text-align: center;

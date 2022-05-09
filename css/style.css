@@ -52,12 +52,18 @@ body {
 }
 
 main {
+  display: flex;
+  place-items: center;
   flex-grow: 1;
 }
 
 /*------------------------------------------------------------------
 6. Cards
 */
+.rating-card {
+  border: 1px solid red;
+}
+
 .thank-you-card {
   display: none;
 }

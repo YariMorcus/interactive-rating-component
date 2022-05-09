@@ -170,6 +170,8 @@ h2 {
   padding: 0.8rem;
   text-align: center;
   color: hsl(0deg, 0%, 100%);
+  font-family: "overpass", sans-serif;
+  font-size: 14px;
   background-color: hsl(213deg, 19%, 18%);
 }
 

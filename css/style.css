@@ -54,6 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: hsl(216deg, 12%, 8%);
 }
 
 main {
@@ -65,6 +66,7 @@ main {
 
 p {
   margin: 1rem 0 1.5rem;
+  color: hsl(216deg, 12%, 54%);
 }
 
 p,
@@ -72,6 +74,10 @@ p,
 .submit-button {
   font-family: "overpass", sans-serif;
   font-size: 15px;
+}
+
+h2 {
+  color: hsl(0deg, 0%, 100%);
 }
 
 /*------------------------------------------------------------------
@@ -89,7 +95,8 @@ h2 {
   width: 17px;
   height: 16px;
   padding: 1rem;
-  border: 1px solid red;
+  border-radius: 100%;
+  background-color: hsl(210deg, 19%, 20%);
   background-image: url("../images/icon-star.jpg");
   background-image: url("../images/icon-star.svg");
   background-repeat: no-repeat;
@@ -101,8 +108,8 @@ h2 {
   margin: 0 auto;
   padding: 2rem 1.5rem;
   max-width: 300px;
-  border: 1px solid red;
   border-radius: 1rem;
+  background-color: hsl(213deg, 19%, 18%);
 }
 @media (min-width: 568px) {
   .rating-card {
@@ -122,7 +129,8 @@ h2 {
   border-radius: 100%;
   line-height: 2.7rem;
   text-align: center;
-  background: lightgreen;
+  color: hsl(217deg, 12%, 63%);
+  background-color: hsl(210deg, 19%, 20%);
 }
 @media (min-width: 568px) {
   .rating-circle {
@@ -140,7 +148,10 @@ h2 {
   width: 100%;
   padding: 1rem 0;
   border-radius: 2rem;
+  border: 1px solid hsl(0deg, 0%, 0%);
   text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
 }
 @media (min-width: 568px) {
   .submit-button {
@@ -156,6 +167,14 @@ h2 {
  9. Footer
 */
 .attribution {
+  padding: 0.8rem;
   text-align: center;
-  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(213deg, 19%, 18%);
+}
+
+.attribution-link {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration-color: hsl(25deg, 97%, 53%);
+  text-underline-offset: 5px;
 }

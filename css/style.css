@@ -14,6 +14,7 @@ Primary use:    Portfolio project
     2. ([VARIABLES] + ) Typography
     3. Global
     4. Header
+        4.1 Headings
     5. Navigation
     6. Cards
     7. Content
@@ -34,7 +35,7 @@ Primary use:    Portfolio project
   font-display: swap;
 }
 @font-face {
-  font-family: "overpass";
+  font-family: "overpass-bold";
   src: url("../font/overpass-bold.woff2") format("woff2"), url("../font/overpass-bold.woff") format("woff"), url("../font/overpass-bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
@@ -52,18 +53,75 @@ body {
 }
 
 main {
+  margin: 0 1.5rem;
   display: flex;
   place-items: center;
   flex-grow: 1;
+}
+
+p {
+  margin: 1rem 0 1.5rem;
+}
+
+p,
+.rating-circle,
+.submit-button {
+  font-family: "overpass", sans-serif;
+  font-size: 15px;
+}
+
+/*------------------------------------------------------------------
+4. Header
+    4.1 Headings
+*/
+h2 {
+  font-family: "overpass-bold", sans-serif;
 }
 
 /*------------------------------------------------------------------
 6. Cards
 */
 .rating-card {
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  max-width: 300px;
   border: 1px solid red;
+  border-radius: 1rem;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  border-radius: 100%;
+  line-height: 2.5rem;
+  text-align: center;
+  background: lightgreen;
+}
+
+.submit-container {
+  margin-top: 1.5rem;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
 }
 
 .thank-you-card {
   display: none;
+}
+
+/*------------------------------------------------------------------
+ 8. Footer
+*/
+.attribution {
+  text-align: center;
+  background-color: hsl(0deg, 0%, 100%);
 }

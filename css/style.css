@@ -127,6 +127,7 @@ h2 {
   height: 2.7rem;
   display: inline-block;
   border-radius: 100%;
+  border: none;
   line-height: 2.7rem;
   text-align: center;
   color: hsl(217deg, 12%, 63%);

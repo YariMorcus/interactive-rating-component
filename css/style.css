@@ -140,6 +140,10 @@ h2 {
     line-height: 3rem;
   }
 }
+.rating-circle:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 12%, 63%);
+}
 
 .submit-container {
   margin-top: 1.5rem;
@@ -158,6 +162,15 @@ h2 {
   .submit-button {
     padding: 0.7rem 0;
   }
+}
+.submit-button:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.selected {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
 }
 
 .thank-you-card {

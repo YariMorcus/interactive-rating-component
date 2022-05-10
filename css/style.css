@@ -88,6 +88,10 @@ h2 {
   font-family: "overpass-bold", sans-serif;
 }
 
+.thank-you-title {
+  text-align: center;
+}
+
 /*------------------------------------------------------------------
 7. Cards
 */
@@ -104,7 +108,8 @@ h2 {
   background-size: 1.3rem;
 }
 
-.rating-card {
+.rating-card,
+.thank-you-card {
   margin: 0 auto;
   padding: 2rem 1.5rem;
   max-width: 300px;
@@ -112,7 +117,8 @@ h2 {
   background-color: hsl(213deg, 19%, 18%);
 }
 @media (min-width: 568px) {
-  .rating-card {
+  .rating-card,
+.thank-you-card {
     max-width: 330px;
   }
 }
@@ -173,8 +179,20 @@ h2 {
   background-color: hsl(25deg, 97%, 53%);
 }
 
-.thank-you-card {
-  display: none;
+.thank-you-header {
+  text-align: center;
+}
+
+.selected-number-container {
+  display: inline-block;
+  padding: 0.8rem;
+  border-radius: 50px;
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(210deg, 19%, 20%);
+}
+
+.thank-you-text {
+  text-align: center;
 }
 
 /*------------------------------------------------------------------

@@ -90,6 +90,7 @@ h2 {
 }
 
 .thank-you-title {
+  margin-top: 0;
   text-align: center;
 }
 
@@ -184,9 +185,18 @@ h2 {
   text-align: center;
 }
 
+.thank-you-illustration {
+  margin: 0 auto;
+  width: 162px;
+  height: 108px;
+  background-image: url("../images/illustration-thank-you.png");
+  background-image: url("../images/illustration-thank-you.svg");
+}
+
 .selected-number-container {
-  display: inline-block;
+  margin-top: 1.5rem;
   padding: 0.8rem;
+  display: inline-block;
   border-radius: 50px;
   color: hsl(25deg, 97%, 53%);
   background-color: hsl(210deg, 19%, 20%);

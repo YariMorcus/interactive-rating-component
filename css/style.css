@@ -67,7 +67,7 @@ main {
 
 p {
   margin: 1rem 0 1.5rem;
-  color: hsl(216deg, 12%, 54%);
+  color: #7c8798;
 }
 
 p,
@@ -116,7 +116,8 @@ h2 {
   padding: 2rem 1.5rem;
   max-width: 300px;
   border-radius: 1rem;
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: rgb(37, 45, 55);
+  background-image: radial-gradient(circle at top, rgb(124, 135, 152) -150%, rgb(37, 45, 55) 27%);
 }
 @media (min-width: 568px) {
   .rating-card,
@@ -215,7 +216,7 @@ h2 {
   color: hsl(0deg, 0%, 100%);
   font-family: "overpass", sans-serif;
   font-size: 14px;
-  background-color: hsl(213deg, 19%, 18%);
+  background-color: rgb(37, 45, 55);
 }
 
 .attribution-link {

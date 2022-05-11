@@ -20,6 +20,7 @@ Primary use:    Portfolio project
     7. Cards
     8. Content
     9. Footer
+    10. Media queries
 
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
@@ -211,4 +212,13 @@ h2 {
   color: hsl(0deg, 0%, 100%);
   text-decoration-color: hsl(25deg, 97%, 53%);
   text-underline-offset: 5px;
+}
+
+/*------------------------------------------------------------------
+ 10. Media queries
+*/
+@media (orientation: landscape) {
+  main {
+    margin-bottom: 1.5rem;
+  }
 }

@@ -70,7 +70,31 @@
   </footer> <!-- .attribution -->
 
   <script>
-    
+    /**
+     * 1. Hide rating card
+     * 2. Show thank you card
+    */
+
+    // Retrieve all button nodes
+    const RATING_CIRCLE_BUTTONS = document.getElementsByClassName("rating-circle");
+
+    [...RATING_CIRCLE_BUTTONS].forEach(element => {
+
+      // Listen for click event for corresponding button
+      element.addEventListener("click", () => {
+        
+        // Store selected rating
+        const SELECTED_RATING = element.innerText;
+
+        // Retrieve both rating and thank you card nodes
+        const RATING_CARD = document.querySelector(".rating-card");
+        const THANK_YOU_CARD = document.querySelector(".thank-you-card");
+
+      })
+
+
+    });
+
   </script>
 
 </body>

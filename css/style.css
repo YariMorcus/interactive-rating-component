@@ -89,6 +89,12 @@ h2 {
   font-family: "overpass-bold", sans-serif;
 }
 
+@media (min-width: 425px) {
+  .rating-card-title {
+    margin-top: 2rem;
+  }
+}
+
 .thank-you-title {
   margin-top: 0;
   text-align: center;
@@ -112,17 +118,19 @@ h2 {
 
 .rating-card,
 .thank-you-card {
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
-  max-width: 300px;
+  padding: 1.6rem;
   border-radius: 1rem;
-  background-color: rgb(37, 45, 55);
-  background-image: radial-gradient(circle at top, rgb(124, 135, 152) -150%, rgb(37, 45, 55) 27%);
+  background-color: hsl(213deg, 20%, 18%);
+  background-image: radial-gradient(circle at top, hsl(216deg, 12%, 39%) -150%, hsl(213deg, 20%, 14%) 27%);
 }
-@media (min-width: 568px) {
+@media (min-width: 425px) {
   .rating-card,
 .thank-you-card {
-    max-width: 330px;
+    max-width: 390px;
+    height: 389px;
+    padding: 1.7rem;
   }
 }
 
@@ -142,7 +150,7 @@ h2 {
   color: hsl(217deg, 12%, 63%);
   background-color: hsl(210deg, 19%, 20%);
 }
-@media (min-width: 568px) {
+@media (min-width: 425px) {
   .rating-circle {
     width: 3rem;
     height: 3rem;
@@ -167,7 +175,7 @@ h2 {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(25deg, 97%, 53%);
 }
-@media (min-width: 568px) {
+@media (min-width: 425px) {
   .submit-button {
     padding: 0.7rem 0;
   }
@@ -216,7 +224,7 @@ h2 {
   color: hsl(0deg, 0%, 100%);
   font-family: "overpass", sans-serif;
   font-size: 14px;
-  background-color: rgb(37, 45, 55);
+  background-color: hsl(213deg, 20%, 18%);
 }
 
 .attribution-link {

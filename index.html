@@ -70,14 +70,11 @@
   </footer> <!-- .attribution -->
 
   <script>
-    /**
-     * 1. Hide rating card
-     * 2. Show thank you card
-    */
 
     // Retrieve all button nodes
     const RATING_CIRCLE_BUTTONS = document.getElementsByClassName("rating-circle");
 
+    // Convert HTMLCollection to Array, so forEach can be used
     [...RATING_CIRCLE_BUTTONS].forEach(element => {
 
       // Listen for click event for corresponding button
@@ -103,8 +100,6 @@
         user_rating_placeholder.innerText = SELECTED_RATING;
 
       })
-
-
     });
 
   </script>

@@ -190,6 +190,10 @@ h2 {
   background-color: hsl(25deg, 97%, 53%);
 }
 
+.thank-you-card {
+  display: none;
+}
+
 .thank-you-header {
   text-align: center;
 }

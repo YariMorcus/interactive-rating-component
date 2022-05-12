@@ -30,11 +30,11 @@
           to help us improve our offering!</p>
 
         <div class="rating-container"> <!-- rating container -->
-          <button type="button" class="rating-circle">1</button>
-          <button type="button" class="rating-circle">2</button>
-          <button type="button" class="rating-circle">3</button>
-          <button type="button" class="rating-circle">4</button>
-          <button type="button" class="rating-circle">5</button>
+          <button id="button-rating-1" type="button" class="rating-circle">1</button>
+          <button id="button-rating-2" type="button" class="rating-circle">2</button>
+          <button id="button-rating-3" type="button" class="rating-circle">3</button>
+          <button id="button-rating-4" type="button" class="rating-circle">4</button>
+          <button id="button-rating-5" type="button" class="rating-circle">5</button>
         </div>
 
         <div class="submit-container"> <!-- submit container -->
@@ -74,6 +74,9 @@
     // Retrieve all button nodes
     const RATING_CIRCLE_BUTTONS = document.getElementsByClassName("rating-circle");
 
+    // Acts as a placeholder to hold prior selected button id
+    let prior_selected_button_id = null;
+
     // Convert HTMLCollection to Array, so forEach can be used
     [...RATING_CIRCLE_BUTTONS].forEach(element => {
 
@@ -83,21 +86,54 @@
         // Store selected rating
         const SELECTED_RATING = element.innerText;
 
+        // Retrieve id of current button
+        let current_button_id = element.getAttribute("id");
+        
+        /*
+          If user has selected a button before, and currently pressed button is NOT the same as button before,
+          retrieve prior selected button node, remove selected class, add selected class to new button, 
+          and remind app of new selected button
+         */
+        if ( (prior_selected_button_id !== null) && (current_button_id !== prior_selected_button_id) ) {
+
+          // Get prior selected button node
+          const PRIOR_SELECTED_BUTTON = document.getElementById(prior_selected_button_id);
+
+          // Remove selected class
+          PRIOR_SELECTED_BUTTON.classList.remove("selected");
+
+          // Add indicator to current selected button
+          element.classList.add("selected");
+
+          // Remind app of which button has been selected
+          prior_selected_button_id = current_button_id;
+
+        } else {
+          
+          // Remind app of which button has been selected
+          prior_selected_button_id = current_button_id;
+
+          // Add indicator to selected button
+          element.classList.add("selected");
+
+        }
+
+
         // Retrieve both rating and thank you card nodes
-        const RATING_CARD = document.querySelector(".rating-card");
-        const THANK_YOU_CARD = document.querySelector(".thank-you-card");
+        // const RATING_CARD = document.querySelector(".rating-card");
+        // const THANK_YOU_CARD = document.querySelector(".thank-you-card");
 
-        // Hide rating card
-        RATING_CARD.classList.add("card-hidden");
+        // // Hide rating card
+        // RATING_CARD.classList.add("card-hidden");
 
-        // Show thank you card
-        THANK_YOU_CARD.classList.remove("card-hidden");
+        // // Show thank you card
+        // THANK_YOU_CARD.classList.remove("card-hidden");
 
-        // Retrieve user rating placeholder node on thank you card
-        let user_rating_placeholder = document.getElementById("user-rating");
+        // // Retrieve user rating placeholder node on thank you card
+        // let user_rating_placeholder = document.getElementById("user-rating");
 
-        // Fill user rating placeholder with selected user rating
-        user_rating_placeholder.innerText = SELECTED_RATING;
+        // // Fill user rating placeholder with selected user rating
+        // user_rating_placeholder.innerText = SELECTED_RATING;
 
       })
     });

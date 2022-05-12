@@ -118,22 +118,29 @@
 
         }
 
+        // Retrieve submit button node
+        const SUBMIT_BUTTON = document.querySelector(".submit-button");
 
-        // Retrieve both rating and thank you card nodes
-        // const RATING_CARD = document.querySelector(".rating-card");
-        // const THANK_YOU_CARD = document.querySelector(".thank-you-card");
+        // Listen for click event (user submits rating)
+        SUBMIT_BUTTON.addEventListener('click', () => {
 
-        // // Hide rating card
-        // RATING_CARD.classList.add("card-hidden");
-
-        // // Show thank you card
-        // THANK_YOU_CARD.classList.remove("card-hidden");
-
-        // // Retrieve user rating placeholder node on thank you card
-        // let user_rating_placeholder = document.getElementById("user-rating");
-
-        // // Fill user rating placeholder with selected user rating
-        // user_rating_placeholder.innerText = SELECTED_RATING;
+          // Retrieve both rating and thank you card nodes
+          const RATING_CARD = document.querySelector(".rating-card");
+          const THANK_YOU_CARD = document.querySelector(".thank-you-card");
+  
+          // Hide rating card
+          RATING_CARD.classList.add("card-hidden");
+  
+          // Show thank you card
+          THANK_YOU_CARD.classList.remove("card-hidden");
+  
+          // Retrieve user rating placeholder node on thank you card
+          let user_rating_placeholder = document.getElementById("user-rating");
+  
+          // Fill user rating placeholder with selected user rating
+          user_rating_placeholder.innerText = SELECTED_RATING;
+          
+        });
 
       })
     });

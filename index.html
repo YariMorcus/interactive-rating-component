@@ -45,13 +45,13 @@
 
     </article> <!-- Rating state end -->
 
-    <article class="thank-you-card"> <!-- Thank you state start -->
+    <article class="thank-you-card card-hidden"> <!-- Thank you state start -->
 
       <section>
 
         <header class="thank-you-header">
           <div class="thank-you-illustration"></div> <!-- icon container -->
-          <p class="selected-number-container">You selected 4 out of 5</p>
+          <p class="selected-number-container">You selected <span id="user-rating"></span> out of 5</p>
           <h2 class="thank-you-title">Thank you!</h2>
         </header>
 
@@ -89,6 +89,18 @@
         // Retrieve both rating and thank you card nodes
         const RATING_CARD = document.querySelector(".rating-card");
         const THANK_YOU_CARD = document.querySelector(".thank-you-card");
+
+        // Hide rating card
+        RATING_CARD.classList.add("card-hidden");
+
+        // Show thank you card
+        THANK_YOU_CARD.classList.remove("card-hidden");
+
+        // Retrieve user rating placeholder node on thank you card
+        let user_rating_placeholder = document.getElementById("user-rating");
+
+        // Fill user rating placeholder with selected user rating
+        user_rating_placeholder.innerText = SELECTED_RATING;
 
       })
 

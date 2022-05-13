@@ -164,6 +164,10 @@ h2 {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(217deg, 12%, 63%);
 }
+.rating-circle.selected {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+}
 
 .submit-container {
   margin-top: 1.5rem;
@@ -186,11 +190,6 @@ h2 {
 .submit-button:hover {
   color: hsl(25deg, 97%, 53%);
   background-color: hsl(0deg, 0%, 100%);
-}
-
-.selected {
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(25deg, 97%, 53%);
 }
 
 .thank-you-header {

@@ -12,6 +12,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+    - [Things I should keep in mind](#things-i-should-keep-in-mind)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -67,8 +68,8 @@ There are a couple of things I learned, which are listed below:
 
 There are however two things I should pay attention to the next time:
 1. Starting to use branches within Git.
-  During the development I forgot to use branches for the features I was developing.
-  This is something I should have done but forgot to do (due to my inexperience :blush:).
+    During the development I forgot to use branches for the features I was developing.
+    This is something I should have done but forgot to do (due to my inexperience :blush:).
 
 2. Remind myself more of _(or don't forget)_ the requirements of the application
   I was so busy writing JavaScript, that I forgot that the user has to press the submit button first, before showing the thank you card. What I did was showing the thank you card immediately when the user clicked on one of the rating buttons, which shouldn't have been the case.

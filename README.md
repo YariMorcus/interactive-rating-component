@@ -63,6 +63,8 @@ There are a couple of things I learned, which are listed below:
 6. How NPM, Gulp, and Browsersync works _(in the most basic way)_. 
 7. How to use Markdown to format this README.md file
 
+#### Things I should keep in mind
+
 There are however two things I should pay attention to the next time:
 1. Starting to use branches within Git.
   During the development I forgot to use branches for the features I was developing.

@@ -53,10 +53,10 @@ Users should be able to:
 
 There are a couple of things I learned, which are listed below:
 1. That you should always start with using semantic compliants-standard HTML first
-  This is important for Web Accessibility _(also refered to as a11y)_, because people who are using assistive technologiës such as screenreaders should also be able to use the application.
+  This is important for Web Accessibility _(also refered to as a11y)_, because people who are using assistive technologies such as screenreaders should also be able to use the application.
 
 2. That I should always validate my HTML and CSS markup with a validation service.
-3. That CSS should be applied when the HTML foundation has been laid out, and is still accessible for assistive technologiës.
+3. That CSS should be applied when the HTML foundation has been laid out, and is still accessible for assistive technologies.
   _Otherwise it will become harder to make it accessible later on_
 4. That JavaScript should be applied when both HTML and CSS are working.
 5. How to use addEventListeners within JavaScript, retrieve nodes, remind previous values, boolean conditionals, add and remove classes and how to loop over an array

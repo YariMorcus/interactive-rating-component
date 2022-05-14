@@ -67,13 +67,13 @@ There are a couple of things I learned, which are listed below:
 #### Things I should keep in mind
 
 There are however two things I should pay attention to the next time:
-1. Starting to use branches within Git.
-  During the development I forgot to use branches for the features I was developing.
-  This is something I should have done but forgot to do (due to my inexperience :blush:).
+1. Starting to use branches within Git.  
+    During the development I forgot to use branches for the features I was developing.  
+    This is something I should have done but forgot to do (due to my inexperience :blush:).
 
-2. Remind myself more of _(or don't forget)_ the requirements of the application
-  I was so busy writing JavaScript, that I forgot that the user has to press the submit button first, before showing the thank you card. What I did was showing the thank you card immediately when the user clicked on one of the rating buttons, which shouldn't have been the case.
-  As a result, I had to modify JavaScript so the requirements were met.
+2. Remind myself more of _(or don't forget)_ the requirements of the application  
+    I was so busy writing JavaScript, that I forgot that the user has to press the submit button first, before showing the thank you card. What I did was showing the thank you card immediately when the user clicked on one of the rating buttons, which shouldn't have been the case.  
+    As a result, I had to modify JavaScript so the requirements were met.
 
 Here is a screenshot of some JavaScript I wrote for the app:
 ![](code-screenshot.png)
@@ -86,7 +86,8 @@ At the present, I am working on the above things by going through (interactive) 
 
 Another way I want to improve my knowledge of these subjects is to do more challenges that [Frontend Mentor](https://www.frontendmentor.io/challenges) is offering, starting at the lowest level and building that up to the more advanced ones.
 
-Besides the above, I want to continue to develop myself by using several tools more often to improve my workflow, and spend less time doing things that can be automated.
+Besides the above, I want to continue to develop myself by using several tools more often to improve my workflow, and spend less time doing things that can be automated.  
+
 A few tools that I will start using more often are:
 1. Gulp
 2. Git

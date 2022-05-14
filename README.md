@@ -82,7 +82,7 @@ Here is a screenshot of some JavaScript I wrote for the app:
 
 The way I want to continue to develop myself is by focusing on laying out a proper foundation of HTML, CSS, and JavaScript.
 This is so I can build quality websites for clients, by just using the core languages of the Web.
-At the present, I am working on the above things by going through (interactive) articles on the MDN Web Docs (see chapter Useful resources).
+At the present, I am working on the above things by going through (interactive) articles on the MDN Web Docs (see chapter [Useful resources](#useful-resources)).
 
 Another way I want to improve my knowledge of these subjects is to do more challenges that [Frontend Mentor](https://www.frontendmentor.io/challenges) is offering, starting at the lowest level and building that up to the more advanced ones.
 
